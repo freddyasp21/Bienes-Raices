@@ -1,0 +1,400 @@
+/* Reset para REMS - 62.5% = 10px de 16px */
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+}
+
+/* Globales */
+
+.contenedor {
+    max-width: 120rem; /* =1200 px */
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 3.8rem;
+}
+
+h2 {
+    font-size: 3.4rem;
+}
+
+h3 {
+    font-size: 3rem;
+}   
+
+h4 {
+    font-size: 2.6rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+p {
+    line-height: 2rem;
+}
+
+/* Utilidades */
+
+.section {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.fw-300 {
+    font-weight: 300;
+}
+
+.centrar-texto {
+    text-align: center;
+}
+
+.d-block {
+    display: block !important;
+}
+
+.contenido-centrado {
+    max-width: 800px;
+}
+/* Botones */
+
+.boton {
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.8rem;
+    padding: 1rem 3rem;
+    display: inline-block;
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.boton-amarillo {
+    background-color: #E08709;
+}
+
+.boton-verde {
+    background-color: #71b100;
+}
+
+/* Header */
+
+.site-header {
+    background-color: #333333;
+    padding: 1rem 0 3rem 0;
+}
+
+.site-header.inicio {
+    background-image: url(../img/header.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    min-width: 60rem;
+}
+
+.contenido-header {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contenido-header h1 {
+    color: white;
+    padding-bottom: 2rem;
+    max-width: 60rem;
+    line-height: 2;
+}
+
+.barra {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3rem;
+}
+
+/* Navegacion */
+
+.navegacion a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.8rem; /* = 18px */
+    margin-right: 2rem;
+}
+
+.navegacion a:hover {
+    color: #71b100;
+}
+
+.navegacion a:last-of-type {
+    margin-right: 0;
+}
+
+/* Iconos Nosotros */
+
+.iconos-nosotros {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icono {
+    flex-basis: calc(33.3% - 1rem); /* remplazo de width */
+    text-align: center;
+}
+
+.icono h3 {
+    text-transform: uppercase;
+}
+
+.icono p {
+    line-height: 2;
+}
+
+/* Anuncios */
+
+.contenedor-anuncions {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.anuncio {
+    /* flex: flex-grow flex-shrink flex-basis --> shortcut*/ 
+    /* flex-grow: para que el contenido crezca si es posible
+       flex-shrink: para que el contenido se haga mas pequeño si es posible;
+       flex-basis: su base; */
+    flex-shrink: 0;
+    flex-basis: calc(33.3% - 1rem);
+    border: 1px solid #B5B5B5;
+    background-color: #F5F5F5;
+    margin-bottom: 2rem;
+}
+
+.contenido-anuncio {
+    padding: 2rem 4rem;
+}
+
+.contenido-anuncio h3 {
+    margin: 0 0 1rem 0;
+    font-size: 2.8rem;
+}
+
+.contenido-anuncio p {
+    line-height: 2;
+    margin: 0 0 1rem 0;
+}
+
+.precio {
+    color: #71b100;
+    font-weight: 700;
+}
+
+.iconos-caracteristicas {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 500px;
+    flex: 1;
+}
+
+.iconos-caracteristicas li {
+    display: flex;
+}
+
+.iconos-caracteristicas li img {
+    margin-right: 2rem;
+}
+
+.ver-todas {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Contacto Home */
+
+.imagen-contacto {
+    background-image: url(../img/encuentra.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 40rem;
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.contenido-contacto {
+    flex: 1;
+    color: white;
+}
+
+.contenido-contacto p {
+    font-size: 1.8rem;
+}
+
+/* Seccion Inferior */
+
+.seccion-inferior {
+    display: flex;
+    justify-content: space-between;
+}
+
+.seccion-inferior .blog {
+    flex-basis: 60%;
+}
+
+.seccion-inferior .testimoniales {
+    flex-basis: calc(40% - 2rem);
+}
+
+.entrada-blog {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.entrada-blog:last-of-type {
+    margin-bottom: 0;
+}
+
+.entrada-blog .imagen {
+    flex-basis: 40%;
+}
+
+.entrada-blog .texto-entrada {
+    flex-basis: calc(60% - 3rem);
+}
+
+.texto-entrada a {
+    color: black;
+    text-decoration: none;
+}
+
+.texto-entrada h4 {
+    margin: 0;
+    line-height: 1.4;
+}
+
+.texto-entrada h4::after {
+    content: '';
+    display: block;
+    width: 15rem;
+    height: .5rem;
+    background-color: #71b100;
+    margin-top: 1rem;
+}
+
+.texto-entrada span {
+    color: #E08709;
+}
+
+/* Testimoniales */
+
+.testimonial {
+    background-color: #71b100;
+    font-size: 2.4rem;
+    padding: 2rem;
+    color: white;
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+}
+
+.testimonial p {
+    text-align: right;
+}
+
+.testimonial blockquote::before {
+    content: '';
+    background-image: url(../img/comilla.svg);
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    left: -2rem;
+}
+
+.testimonial blockquote {
+    position: relative;
+    padding-left: 5rem;
+    font-weight: 300;
+}
+
+/* footer */
+
+.site-footer {
+    background-color: #333333;
+    margin: 0;
+}
+
+.contenedor-footer {
+    padding: 3rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.copyright {
+    margin: 0;
+    color: white;
+}
+
+/* Internas */
+
+/* Nosotros */
+
+.contenido-nosotros {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 2rem;
+}
+
+.texto-nosotros blockquote {
+    font-weight: 900;
+    font-size: 2rem;
+    margin: 0;
+    padding: 1rem 0 3rem 0;
+}
+
+.texto-nosotros p {
+    line-height: 3rem;
+}
+
+/* Anuncios */
+
+.resumen-propiedad {
+    display: flex ;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.anuncio-descripcion {
+    font-size: 2rem;
+    line-height: 3rem;
+}
+
+.main-anuncio {
+    margin-bottom: 8rem;
+} 
+
+/* Blog */
+
+.main-anuncio {
+    margin-bottom: 8rem;
+}
+
+/* Contacto */
+
+label {
+    display: block;
+}
